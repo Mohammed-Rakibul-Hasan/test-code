@@ -8,6 +8,13 @@ struct People
     char email_id[40];
     char address[40];
 };
+FILE *ptr,*ptr2;
+void create_contact()
+{
+    struct People contact;
+    system("cls");
+    fflush(stdin);
+    printf("First Name= ");
     gets(contact.fname);
     printf("Last Name= ");
     gets(contact.lname);
